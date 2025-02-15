@@ -1,0 +1,55 @@
+body{
+    background-color: #DDDDDD;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #FFF;
+    position: relative;
+    width: 90vw;
+    top: 7vh;
+    height: 800vh;
+}
+
+.title{
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#subtitulo{
+    font-style: italic;
+}
+
+#legenda{
+    margin-bottom: 4vh;
+    margin-top: 0;
+}
+
+h1, h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container_imagem {
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.409);
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* TODO: Criar divs separadas que cumpram a função de borda
+   TODO: Completar o site
+*/
+
+.sobre{
+    margin-top: 7vh;
+    text-align: left;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 9vh;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.409);
+}
