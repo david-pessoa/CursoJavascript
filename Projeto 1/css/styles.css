@@ -10,7 +10,7 @@ body{
     position: relative;
     width: 90vw;
     top: 7vh;
-    height: 800vh;
+    margin-bottom: 13vh;
 }
 
 .title{
@@ -35,13 +35,16 @@ h1, h2{
     font-family: 'Courier New', Courier, monospace;
 }
 
+h2{
+    font-size: 1.875em;
+}
+
 .container_imagem {
-    border-bottom: 1px dashed rgba(128, 128, 128, 0.409);
     width: 90%;
     margin: 0 auto;
 }
 
-/* TODO: Criar divs separadas que cumpram a função de borda
+/*
    TODO: Completar o site
 */
 
@@ -50,6 +53,58 @@ h1, h2{
     text-align: left;
     margin-left: 3vw;
     margin-right: 3vw;
-    padding-bottom: 9vh;
+    padding-bottom: 3vh;
+}
+
+.dashed_line{
     border-bottom: 1px dashed rgba(128, 128, 128, 0.409);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gray_box{
+    background-color: #DDDDDD;
+    margin: 4vh auto 4vh auto;
+    padding: 8vh 0  4vh 4vh;
+    width: 80%;
+    text-align: left;
+    display: grid;
+    
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-left: 5vh;
+}
+
+.autor{
+    font-style: italic;
+}
+
+.curiosities{
+    margin: 6vh auto 8vh 4.5vw;
+    text-align: left;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5vh;
+}
+
+.gray_box > h3{
+    margin: 0 0 0 0;
+} 
+
+#dexter{
+    margin-top: 0;
+}
+
+.more_info{
+    text-align: left;
+    padding-left: 60px;
+}
+
+.more_info > h3{
+    padding-left: 0;
 }
