@@ -27,6 +27,8 @@ body{
 
 #header nav .title-nav{
     position: relative;
+    color: #000;
+    text-decoration: none;
 }
 
 #header nav .title-nav::after{
@@ -90,6 +92,7 @@ body{
 #initial-section .info-container .aspirations p{
     font-size: 1.4em;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 #initial-section .info-container figure{
@@ -109,6 +112,7 @@ body{
     margin-top: .5em;
     text-align: center;
     width: 50%;
+    line-height: 1.5;
 }
 
 /*  Computer Image Section */
@@ -141,4 +145,5 @@ body{
 
 #about-me .about p{
     margin: 0;
+    line-height: 1.5;
 }
