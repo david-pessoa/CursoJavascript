@@ -110,3 +110,35 @@ body{
     text-align: center;
     width: 50%;
 }
+
+/*  Computer Image Section */
+#computer-img{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#computer-img img{
+    max-width: 100%;
+}
+
+/* About Me Section */
+
+#about-me{
+    text-align: center;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+#about-me .about{
+    width: 50%
+}
+
+#about-me .about h2{
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#about-me .about p{
+    margin: 0;
+}
