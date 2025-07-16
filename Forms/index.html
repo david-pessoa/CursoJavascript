@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top">
+        <h2>Cadastre seu carro para vender mais rápido!</h2>
+    </div>
+    <div class="body-bottom">
+        <form>
+            <div class="title-form">
+                <span id="title">FORMULÁRIO</span>
+            </div>
+            <div class="body-form">
+                <h1 id="venda">Venda fácil seu carro!</h1>
+                <span>Descreva as características e marque os opcionais que ele possui</span>
+                <div class="form-container">
+                    <div class="input-container">
+                        <label for="title">Título do anúncio:<span>*</span></label>
+                        <input type="text" name="title" placeholder="Um título para anunciar seu carro" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="price">Preço:<span>*</span></label>
+                        <input type="number" name="price" placeholder="Defina o preço" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="description">Descrição:<span>*</span></label>
+                        <textarea name="description" placeholder="Aqui você coloca detalhes do veículo, por exemplo: se ele tem algum arranhão" required></textarea>
+                    </div>
+                    <div class="input-container">
+                        <label for="brand">Marca:<span>*</span></label>
+                        <input type="text" name="brand" placeholder="Digite a marca do veículo" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="kilometers">Kilometragem:<span>*</span></label>
+                        <input type="number" name="kilometers" placeholder="Digite a Kilometragem do veículo" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="acquisition-date">Data da compra:<span>*</span></label>
+                        <input type="date" name="acquisition-date" placeholder="Digite a Kilometragem do veículo" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="cambio">Tipo de câmbio:<span>*</span></label>
+                        <div class="radios">
+                            <div class="radio">
+                                <input type="radio" name="cambio" value="manual">
+                                <label for="manual">Manual</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="cambio" id="automatico">
+                                <label for="automatico">Automático</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="optionals">Opcionais:<span>*</span></label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

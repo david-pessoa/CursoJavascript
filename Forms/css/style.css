@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+
+/* Define fundo */
+
+body{
+    background-color: #F1ECF8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+    background-color: #683BB6;
+    height: 25vh;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.top h2{
+    color: #FFF;
+}
+
+.body-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulário - Cabeçalho */
+
+form{
+    background-color: #FFF;
+    width: 80%;
+    margin-top: -50px;
+    padding-top: 10px;
+}
+
+.title-form{
+    text-align: center;
+    border-bottom: 2px solid #b7b7b7;
+    margin-bottom: 5vh;
+}
+
+#title{
+    color: #683BB6;
+    font-size: 25px;
+    line-height: 35px;
+    border-bottom: 2px solid #683BB6;
+    padding-bottom: 4px;
+    margin-bottom: 4vh;
+}
+
+/* Corpo do formulário */
+
+.body-form{
+    padding-left: 30px;
+}
+
+#venda{
+    margin-bottom: 4vh;
+}
+
+.body-form span,
+.body-form label{
+    color: #515151;
+    font-size: 18px;
+}
+
+.form-container{
+    margin-top: 4vh;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 15px;
+    margin-bottom: 8vh;
+}
+
+.input-container label span{
+    color: #FF0000;
+}
+
+.input-container input{
+    border: none;
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 5px;
+}
+
+.input-container input:focus,
+.input-container textarea:focus{
+    outline: none
+}
+
+.input-container input,
+.input-container textarea{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Remove as setinhas */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container .radios{
+    display: flex;
+    flex-direction: row;
+}
+
+.radio{
+    width: 10%
+}
+
+.radio input{
+    width: 13px;
+}
