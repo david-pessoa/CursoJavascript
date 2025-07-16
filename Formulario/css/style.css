@@ -1,0 +1,21 @@
+body{
+    padding-bottom: 500px;
+}
+
+.input-container{
+    margin-bottom: 15px;
+}
+
+.input-container label,
+.input-container input{
+    display: block;
+}
+
+.checkbox label,
+.checkbox input,
+.checkbox span,
+.radio label,
+.radio input,
+.radio span{
+    display: inline-block;
+}

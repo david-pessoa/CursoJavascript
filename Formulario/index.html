@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="" method="get">
+        <div class="input-container">
+            <label for="name">Nome:</label>
+            <input id="name" type="text" name="name"/>
+        </div>
+        <div class="input-container">
+            <label for="age">Idade:</label>
+            <input id="age" type="text" name="age"/>
+        </div>
+
+        <!-- Select -->
+        <div class="input-container">
+            <label for="job">Selecione sua profissão</label>
+            <select name="job" id="job">
+                <option value="1">Médico</option>
+                <option value="2">Advogado</option>
+                <option value="3">Dentista</option>
+                <option value="4" selected>Desenvolvedor</option>
+                <option value="5">Nuntricionista</option>
+            </select>
+        </div>
+
+        <!-- Múltipla escolha -->
+        <div class="input-container">
+           <label for="hobbies">Selecione seus hobbies:</label>
+           <select name="hobbies" id="hobbies" multiple>
+               <option value="1">Andar de Bicicleta</option>
+               <option value="2">Jogar Xadrez</option>
+               <option value="3">Jogar Futebol</option>
+               <option value="4">Jogar Vôlei</option>
+               <option value="5">Pintura</option>
+           </select>
+        </div>
+        
+        <!-- Fieldset e legend -->
+        <div class="input-container">
+           <fieldset>
+               <legend>Experiência Acadêmica</legend>
+               <label for="school">Instituição de Ensino:</label>
+               <input id="school" name="school" type="text">
+
+               <label for="research">Pesquisas Publicadas:</label>
+               <input id="research" name="research" type="text">
+           </fieldset>
+        </div>
+
+        <!-- Datalist -->
+        <div class="input-container">
+            <label for="flavor">Escolha um sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+            <datalist id="flavors">
+                <option value="Açaí"></option> 
+                <option value="Morango"></option>
+                <option value="Chocolate"></option>
+                <option value="Doce de leite"></option>
+                <option value="Flocos"></option>
+            </datalist>
+        </div>
+
+        <!-- Radio -->
+        <div class="input-container">
+            <label for="car_model">Escolha o modelo do carro:</label>
+            <div class="radio">
+                <input type="radio" name="car_model" value="bmw">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="volkswagen">
+                <label for="volkswagen">Volkswagen</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="chevrolet">
+                <label for="chevrolet">Chevrolet</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="fiat">
+                <label for="fiat">Fiat</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="toyota">
+                <label for="toyota">Toyota</label>
+            </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="input-container">
+           <label for="optionals">Opcionais do carro:</label>
+           <div class="checkbox">
+               <input type="checkbox" name="optionals[]" value="big_tires">
+               <label for="big_tires">Pneus grandes</label>
+           </div>
+           <div class="checkbox">
+               <input type="checkbox" name="optionals[]" value="turbo_engine">
+               <label for="turbo_engine">Motor turbo</label>
+           </div>
+           <div class="checkbox">
+               <input type="checkbox" name="optionals[]" value="hybrid">
+               <label for="hybrid">Híbrido</label>
+           </div>
+        </div>
+
+        <!-- Datas -->
+        <div class="input-container">
+            <label for="birthdate">Data de nascimento:</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+        <!-- Arquivos -->
+        <div class="input-container">
+            <label for="pdf_file">Insira um arquivo PDF:</label>
+            <input type="file" name="pdf_file" id="pdf_file">
+        </div>
+
+        <!-- Números -->
+        <div class="input-container">
+            <label for="salary">Digite seu último salário ou salário atual:</label>
+            <input type="number" name="salary" id="salary">
+        </div> 
+
+        <!-- Limpa o formulário -->
+        <div class="input-container">
+            <input type="reset" value="Limpar">
+        </div>
+
+        <!-- Email -->
+        <div class="input-container">
+            <label for="email">Digite seu email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!-- Required -->
+        <div class="input-container">
+            <label for="last_experience">Digite o ano de sua última experiência profissional:</label>
+            <input type="text" name="last_experience" id="last_experience" required>
+        </div>
+        
+        <!-- Submete o formulário -->
+        <input type="submit"/>
+    </form>
+</body>
+</html>
