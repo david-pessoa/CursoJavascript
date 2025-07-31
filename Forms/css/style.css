@@ -7,6 +7,7 @@
 body{
     background-color: #F1ECF8;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10vh;
 }
 
 .top{
@@ -116,6 +117,32 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 10%
 }
 
+.column-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.col .check input[type="checkbox"]{
+    width: 13px
+}
+
 .radio input{
     width: 13px;
+}
+
+button[type="submit"]{
+    background-color: #683BB6;
+    color: #FFF;
+    margin-bottom: 8vh;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
 }
