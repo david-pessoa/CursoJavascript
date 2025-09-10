@@ -6,21 +6,33 @@
 
 :root{
     --dark-blue: #242932;
+    --green: #2FC76A;
+    --gray: #7e7e7e;
 }
 
 h1, h2, h3, h4, h5{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: var(--dark-blue);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gray);
 }
 
 button{
     color: #FFF;
-    background-color: #2FC76A;
+    background-color: var(--green);
     border-radius: 5px;
     border: none;
     text-transform: uppercase;
     padding: 0.7em 1.5em;
     cursor: pointer;
+}
+
+section{
+    margin-bottom: 14vh;
 }
 
 /* Header */
@@ -70,7 +82,7 @@ header nav ul li button{
     background-repeat: no-repeat;           /* não repetir */
     background-size: cover;                 /* cobre toda a tela */
     background-position: center; 
-    height: 55vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,3 +102,174 @@ header nav ul li button{
 }
 
 /* About section */
+#about{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+
+#about .container{
+    text-align: center;
+    width: 25%;
+}
+
+#about .container .icon{
+    margin-bottom: 3vh;
+}
+
+#about .container .icon i{
+    font-size: 4rem;
+    margin-bottom: 0.7rem;
+}
+
+#about #security.container .icon i{
+    color: var(--green);
+}
+
+#about #performance.container .icon i{
+    color: #ED402A;
+}
+
+#about #support.container .icon i{
+    color: #ED8F2C;
+}
+
+#about .container .icon h4{
+    font-size: 1.5rem;
+}
+
+#about .container .description{
+    line-height: 1.5rem;
+}
+
+/* Seção para selecionar um plano */
+#select-plan{
+    text-align: center;
+}
+
+#select-plan h1{
+    font-size: 2.5rem;
+}
+
+#select-plan h2{
+    font-size: 1.4rem;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+/* Seção com planos */
+#plan-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#plan-section .plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+}
+
+#plan-section .ball{
+    background-color: var(--green);
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: -3.2rem;
+    z-index: 10;
+}
+
+#plan-section .ball p{
+    color: #FFF;
+}
+
+#plan-section #plus .ball{
+    background-color: #F35C58;
+}
+
+#plan-section .plan-type{
+    background-color: var(--dark-blue);
+    width: 100%;
+}
+
+#plan-section .plan-type h3{
+    color: #FFF;
+    text-transform: uppercase;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+#plan-section .info{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(237, 236, 236);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+#plan-section button{
+    border-radius: 0;
+    width: 100%;
+    text-transform: none;
+    font-size: 1.3rem;
+}
+
+#plan-section #plus button{
+    background-color: #F35C58;
+}
+
+/* Seção para pesquisa de domínio */
+#domain-search{
+    background-color: #34454F;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#domain-search h1{
+    color: #FFF;
+    font-size: 3rem;
+}
+
+#domain-search h2{
+    color: rgb(172, 172, 172);
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+#domain-search form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#domain-search form input{
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#domain-search form button{
+    text-transform: none;
+    font-size: 1.3rem;
+    width: 15rem
+}
