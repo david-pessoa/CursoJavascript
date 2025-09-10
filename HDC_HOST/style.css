@@ -1,0 +1,92 @@
+/* Configurações Iniciais */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-blue: #242932;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button{
+    color: #FFF;
+    background-color: #2FC76A;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+}
+
+/* Header */
+header{
+    background-color: var(--dark-blue);
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header img{
+    max-height: 3.75rem;
+    max-width: 3.75rem;
+    margin-left: 2vw;
+}
+
+header nav{
+    margin-right: 2vw;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+    align-items: center;
+}
+
+header nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header nav ul li button{
+    font-size: 1.25rem;
+}
+
+/* Banner section */
+#banner{
+    background-image: url(img/mainbanner.png);
+    background-repeat: no-repeat;           /* não repetir */
+    background-size: cover;                 /* cobre toda a tela */
+    background-position: center; 
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .container h1, #banner .container h2{
+    color: #FFF;
+    text-align: center;
+}
+
+#banner .container h1{
+    font-size: 3rem;
+}
+
+#banner .container h2{
+    font-size: 2rem;
+}
+
+/* About section */
