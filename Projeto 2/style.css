@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Tema claro / Tema escuro */
+:root {
+  --bg: #FFF;
+  --text-color: #111;
+  --border-color: #e5e7eb;
+  --box: #f8fafc;
+  --action: #2563eb;
+}
+[data-tema="dark"] {
+  --bg: #0b1220;
+  --text-color: #e5e7eb;
+  --border-color: #1f2937;
+  --box: #111827;
+  --action: #38bdf8;
+}
+
+/* Coloca o rodapé no fundo */
+html, body {
+  height: 100%; 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+.topo {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.topo .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .75rem 1rem;
+}
+
+.caixa {
+  border: 1px solid var(--border-color);
+  background-color: var(--box);
+  border: .5rem;
+  padding: 1rem 1rem;
+  margin: 1.5rem auto;
+  border-radius: .5rem;
+  max-width: 60%;
+}
+
+h1 {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+form {
+  display: grid;
+  gap: .5rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  padding: .7rem .9rem;
+  border: 1px solid var(--border-color);
+  border-radius: .5rem;
+  color: var(--text-color);
+  background-color: var(--bg);
+}
+
+.btn {
+  padding: .6rem .9rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg);
+  color: var(--text-color);
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  max-width: 250px;
+}
+
+.btn.primario {
+  margin-top: 1rem;
+  background-color: var(--action);
+  color: #FFF;
+}
+
+.rodape {
+  border-top: 1px solid var(--border-color);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  margin-top: auto;
+}
