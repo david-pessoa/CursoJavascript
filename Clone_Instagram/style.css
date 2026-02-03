@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fbfafb;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+main {
+	margin: 7vh auto 0 auto;
+	width: 50vw;
+	height: 80vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+}
+
+main .banner {
+	height: 100%;
+}
+
+main .banner img {
+	height: 100%;
+}
+
+main aside {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+main aside .container {
+	background-color: #fff;
+	border: solid rgba(0, 0, 0, 0.158) 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+main aside .container .instagram-logo {
+	height: 100px;
+	margin: 0 auto 2rem auto;
+}
+
+main aside .container form {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 60%;
+}
+
+main aside .container form input {
+	background-color: #fbfafb;
+  padding: 1em;
+  border: none;
+  border: solid rgba(0, 0, 0, 0.158) 1px;
+  border-radius: 5px;
+  outline: none;
+}
+
+main aside .container form button {
+  margin-top: 1rem;
+  padding: 0.8em;
+  background-color: #B2DFFC;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+main aside .container .divisor {
+  padding: 1.4em;
+  margin-bottom: 0.6rem;
+}
+
+main aside .container .alternative-login {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+main aside .container .alternative-login a button {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3C5A99;
+  gap: 1em;
+}
+main aside .container .alternative-login a button img {
+  height: 1.2rem;
+}
+
+main aside .container.register span a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #72A0E0;
+}
+
+main aside .apps{
+text-align: center;
+}
+main aside .apps .download-btns {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+main aside .apps .download-btns a {
+  width: 40%;
+}
+main aside .apps .download-btns a img {
+  width: 100%;
+}
