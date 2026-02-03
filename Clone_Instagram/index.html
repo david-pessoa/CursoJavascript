@@ -16,17 +16,17 @@
 				<div class="login-container container">
 					<img class="instagram-logo" src="img/logo_instagram.png" alt="Instagram Logo" />
 					<form action="">
-						<input type="text" placeholder="Número telefone, usuário ou email" />
-						<input type="text" placeholder="Senha" />
+						<input type="text" name="username" placeholder="Número telefone, usuário ou e-mail" />
+						<input type="password" name="password" placeholder="Senha" />
 						<button type="submit">Entrar</button>
 					</form>
 					<div class="divisor"><span>OU</span></div>
 					<!--Pensar melhor no que fazer aqui-->
 					<div class="alternative-login">
 						<a href="https://www.facebook.com/">
-							<button>
+							<button type="button">
 								<img src="img/logo_facebook.svg" alt="Entrar com facebook" />
-								Entrar com o Facebook
+								<span>Entrar com o Facebook</span>
 							</button>
 						</a>
 						<a href="#">Esqueceu a senha?</a>
@@ -44,6 +44,30 @@
 				</div>
 			</aside>
 		</main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Meta</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Termos</a></li>
+          <li><a href="#">Principais Contas</a></li>
+          <li><a href="#">Hashtags</a></li>
+          <li><a href="#">Localização</a></li>
+          <li><a href="#">Instagram Lite</a></li>
+          <li><select name="laguage" id="language">
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="pt">Português (Portugal)</option>
+            <option value="en-gb">English (UK)</option>
+            <option value="en-us">English (USA)</option>
+            <option value="es">Español (España)</option>
+          </select></li>
+        </ul>
+      </nav>
+      <p id="copyright"></p>
+    </footer>
 		<script src="script.js"></script>
 	</body>
 </html>
