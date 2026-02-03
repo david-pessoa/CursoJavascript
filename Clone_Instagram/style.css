@@ -79,8 +79,30 @@ main aside .container form button {
 }
 
 main aside .container .divisor {
-  padding: 1.4em;
+  padding: 1.4em 0;
+  width: 60%;
   margin-bottom: 0.6rem;
+  position: relative;
+  text-align: center;
+}
+
+.divisor span {
+  background: #fff;
+  padding: 0 16px;
+  color: #8e8e8e;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.divisor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #dbdbdb;
 }
 
 main aside .container .alternative-login {
