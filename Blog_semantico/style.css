@@ -157,6 +157,7 @@ main aside .card form button {
 main aside .card ul {
 	display: flex;
 	flex-direction: column;
+  text-align: center;
 	gap: 15px;
 }
 
@@ -291,6 +292,10 @@ footer {
 	main aside .card form button {
 		width: 30%;
 		font-size: 0.8rem;
+	}
+
+  main aside .card ul {
+		text-align: left;
 	}
 
 	main aside .card .tags {
