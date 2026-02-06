@@ -86,7 +86,7 @@ main {
 }
 
 main .container {
-	flex: 2 2 70%;
+	flex: 2 1 70%;
 }
 
 main .container section {
@@ -152,12 +152,12 @@ main aside .card form button {
 	font-weight: 400;
 	background-color: #3aa0f3;
 	color: #fff;
+  cursor: pointer;
 }
 
 main aside .card ul {
 	display: flex;
 	flex-direction: column;
-  text-align: center;
 	gap: 15px;
 }
 
@@ -246,6 +246,9 @@ footer {
 		width: 40%;
 		font-size: 0.625rem;
 	}
+	main aside .card ul {
+		text-align: center;
+	}
 
 	main aside .card .tags {
 		flex-direction: column;
@@ -294,7 +297,7 @@ footer {
 		font-size: 0.8rem;
 	}
 
-  main aside .card ul {
+	main aside .card ul {
 		text-align: left;
 	}
 
