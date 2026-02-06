@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog Semântico</title>
+	</head>
+	<body>
+		<header>
+			<a href=""><h3>Blog</h3></a>
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>Categorias</li>
+					<li>Contato</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article class="container">
+				<section>
+					<figure>
+						<img src="" alt="" />
+					</figure>
+					<h1>Algum título</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor, quasi nam
+						officiis architecto pariatur minus explicabo accusantium dolorum reiciendis tenetur.
+						Suscipit, odio incidunt tempore praesentium nihil laboriosam vero quia?
+					</p>
+					<h5>Por: David Pessoa</h5>
+					<a href="">Ler mais</a>
+				</section>
+				<section>
+					<figure>
+						<img src="" alt="" />
+					</figure>
+					<h1>Algum título</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor, quasi nam
+						officiis architecto pariatur minus explicabo accusantium dolorum reiciendis tenetur.
+						Suscipit, odio incidunt tempore praesentium nihil laboriosam vero quia?
+					</p>
+					<h5>Por: David Pessoa</h5>
+					<a href="">Ler mais</a>
+				</section>
+				<section>
+					<figure>
+						<img src="" alt="" />
+					</figure>
+					<h1>Algum título</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor, quasi nam
+						officiis architecto pariatur minus explicabo accusantium dolorum reiciendis tenetur.
+						Suscipit, odio incidunt tempore praesentium nihil laboriosam vero quia?
+					</p>
+					<h5>Por: David Pessoa</h5>
+					<a href="">Ler mais</a>
+				</section>
+			</article>
+			<aside>
+				<article class="card">
+					<h2>Busca</h2>
+					<form action="">
+						<input type="text" placeholder="Pesquise no blog" />
+						<button type="submit">Buscar</button>
+					</form>
+				</article>
+				<article class="card">
+					<h2>Categorias</h2>
+					<ul>
+						<li><a href="#">Paisagens</a></li>
+						<li><a href="#">Aventura</a></li>
+						<li><a href="#">Viagens Longas</a></li>
+						<li><a href="#">Florestas</a></li>
+						<li><a href="#">Cachoeiras</a></li>
+					</ul>
+				</article>
+				<article class="card">
+					<h2>Tags</h2>
+					<ul>
+						<li>Lifestyle</li>
+						<li>Viagem</li>
+						<li>Barco</li>
+						<li>Trilha</li>
+						<li>Tirolesa</li>
+						<li>Rafting</li>
+						<li>Parapente</li>
+					</ul>
+				</article>
+			</aside>
+		</main>
+		<footer>
+			<h3>Blog</h3>
+			<p>Os melhores registros de aventuras</p>
+			<p id="copyright"></p>
+		</footer>
+	</body>
+	<script>
+		const copyright = document.getElementById('copyright');
+		copyright.innerHTML = `${new Date().getFullYear()} &copy; David Pessoa`;
+	</script>
+</html>
