@@ -235,10 +235,6 @@ footer nav ul li select {
 	main aside .apps {
 		font-size: 0.9rem;
 	}
-
-	main aside .apps .download-btns a {
-		width: 40%;
-	}
 	main aside .apps .download-btns a img {
 		width: 100%;
 	}
@@ -305,30 +301,50 @@ footer nav ul li select {
 	main aside .container.register span {
 		text-align: center;
 	}
+
+	footer nav ul {
+		justify-content: center;
+	}
 }
 
 @media (max-width: 540px) {
 	body {
 		overflow: visible;
+		background-color: #fff;
 	}
 
 	main {
 		margin: 7vh auto 0 auto;
-		width: 80%;
+		width: 90%;
 	}
 
 	main .banner {
 		display: none;
 	}
 
+	main aside .container {
+		border: none;
+	}
+
+	main aside .container .divisor {
+		padding: 1em 2.7em;
+	}
+
+	main aside .apps .download-btns a {
+		width: 50%;
+	}
+
 	footer {
 		position: static;
 		margin-top: 8rem;
+		width: 90%;
 	}
 
-	footer ul {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 10px;
+	footer nav ul {
+		gap: 20px;
+	}
+
+	footer #copyright {
+		padding-bottom: 1.5rem;
 	}
 }
