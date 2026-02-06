@@ -1,4 +1,177 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
+/* Configuração inicial */
+body {
+	background-color: #fbfafb;
+	font-family: 'Times New Roman', Times, serif;
+	color: #262626;
+  overflow-x: hidden;
+}
+
+:root{
+  --border: rgba(0, 0, 0, 0.3) solid 1px;
+  --bigger-border: rgba(0, 0, 0, 0.3) solid 2px;
+}
+
+a {
+	text-decoration: none;
+	color: #262626;
+	transition: 0.3s ease;
+}
+
+a:hover {
+	color: #3c7ef8;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+ul {
+	list-style: none;
+}
+
+input,
+input:focus {
+	outline: none;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header {
+	height: 5.5rem;
+	border-bottom: var(--bigger-border);
+	display: flex;
+	align-items: center;
+	width: 100vw;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	margin: 0 auto;
+}
+
+header nav ul {
+	display: flex;
+	gap: 20px;
+}
+
+header nav ul li {
+	font-size: 1.2rem;
+}
+
+/* Container article */
+main {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	gap: 2rem;
+}
+
+main .container {
+	width: 70%;
+}
+
+main .container section {
+	width: 100%;
+	margin-top: 2.5rem;
+}
+
+main .container section figure,
+main .container section figure img {
+	width: 100%;
+}
+
+main .container section h1 {
+	margin: 1rem 0;
+}
+
+main .container section p {
+	margin-bottom: 1rem;
+}
+
+main .container section h4 {
+	margin: 1rem 0;
+}
+
+main aside {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2.5rem;
+	gap: 15px;
+	width: 24%;
+}
+
+main aside .card {
+	background-color: #fff;
+	border: var(--border);
+	padding: 1.5rem;
+}
+
+main aside .card h2 {
+	margin-bottom: 1.2rem;
+}
+
+main aside .card form {
+	width: 100%;
+	display: flex;
+}
+
+main aside .card form input {
+	padding: 0.5em;
+	width: 70%;
+	border: var(--border);
+	font-size: 0.8rem;
+}
+
+main aside .card form button {
+	width: 30%;
+	border: none;
+	font-size: 0.8rem;
+	font-weight: 400;
+	background-color: #3aa0f3;
+	color: #fff;
+}
+
+main aside .card ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+main aside .card .tags {
+	flex-direction: row;
+	flex-wrap: wrap;
+  gap: 7px;
+}
+
+main aside .card .tags li{
+  background-color: #DFDFDF;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  border-top: var(--bigger-border);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
